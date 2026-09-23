@@ -27,10 +27,10 @@ export default function Footer() {
             <p className="font-semibold text-brand-950">Navegación</p>
             <ul className="mt-3 space-y-2 text-sm text-brand-900/60">
               <li><Link to="/" className="hover:text-brand-900">Inicio</Link></li>
-              <li><a href="/#servicios" className="hover:text-brand-900">Catálogo de servicios</a></li>
-              <li><a href="/#nosotros" className="hover:text-brand-900">Sobre nuestro laboratorio</a></li>
+              <li><a href={`${import.meta.env.BASE_URL}#servicios`} className="hover:text-brand-900">Catálogo de servicios</a></li>
+              <li><a href={`${import.meta.env.BASE_URL}#nosotros`} className="hover:text-brand-900">Sobre nuestro laboratorio</a></li>
               <li><Link to="/resultados" className="hover:text-brand-900">Portal de resultados</Link></li>
-              <li><a href="/#contacto" className="hover:text-brand-900">Contacto y ubicación</a></li>
+              <li><a href={`${import.meta.env.BASE_URL}#contacto`} className="hover:text-brand-900">Contacto y ubicación</a></li>
             </ul>
           </div>
 
