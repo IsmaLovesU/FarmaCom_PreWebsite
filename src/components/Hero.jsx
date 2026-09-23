@@ -61,7 +61,7 @@ export default function Hero() {
 
         <div className="relative">
           <img
-            src={`${import.meta.env.BASE_URL}images/Hero.jpg`}
+            src={`${import.meta.env.BASE_URL}images/hero.jpg`}
             alt="Fotografía del laboratorio"
             className="aspect-[4/5] w-full rounded-3xl object-cover shadow-xl shadow-brand-900/10"
           />

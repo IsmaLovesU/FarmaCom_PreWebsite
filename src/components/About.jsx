@@ -56,7 +56,7 @@ export default function About() {
           </div>
 
           <img
-            src={`${import.meta.env.BASE_URL}images/About.jpg`}
+            src={`${import.meta.env.BASE_URL}images/about.jpg`}
             alt="Equipo del laboratorio"
             className="aspect-[4/3] w-full rounded-3xl object-cover"
           />
