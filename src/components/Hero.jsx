@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { ArrowRight, HeartPulse, Microscope, ShieldCheck } from "lucide-react";
-import ImagePlaceholder from "./ImagePlaceholder";
 
 const highlights = [
   { icon: HeartPulse, title: "Atención profesional", text: "Personal calificado" },
@@ -61,10 +60,10 @@ export default function Hero() {
         </div>
 
         <div className="relative">
-          <ImagePlaceholder
-            icon={Microscope}
-            label="Fotografía del laboratorio"
-            className="aspect-[4/5] w-full rounded-3xl shadow-xl shadow-brand-900/10"
+          <img
+            src={`${import.meta.env.BASE_URL}images/Hero.jpg`}
+            alt="Fotografía del laboratorio"
+            className="aspect-[4/5] w-full rounded-3xl object-cover shadow-xl shadow-brand-900/10"
           />
           <div className="absolute -bottom-6 left-6 right-6 flex items-center gap-3 rounded-2xl bg-white p-4 shadow-lg shadow-brand-900/10 md:left-8 md:right-auto md:w-72">
             <span className="flex h-11 w-11 flex-none items-center justify-center rounded-xl bg-brand-900 text-white">

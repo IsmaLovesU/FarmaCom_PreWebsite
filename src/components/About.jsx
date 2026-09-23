@@ -1,5 +1,4 @@
 import { HeartHandshake, Lock, SlidersHorizontal, Users } from "lucide-react";
-import ImagePlaceholder from "./ImagePlaceholder";
 
 const values = [
   {
@@ -56,10 +55,10 @@ export default function About() {
             </div>
           </div>
 
-          <ImagePlaceholder
-            icon={Users}
-            label="Equipo del laboratorio"
-            className="aspect-[4/3] w-full rounded-3xl"
+          <img
+            src={`${import.meta.env.BASE_URL}images/About.jpg`}
+            alt="Equipo del laboratorio"
+            className="aspect-[4/3] w-full rounded-3xl object-cover"
           />
         </div>
 
