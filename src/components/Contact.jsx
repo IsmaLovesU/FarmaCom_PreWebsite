@@ -83,7 +83,9 @@ export default function Contact() {
                 Contactar por WhatsApp
               </a>
               <a
-                href="#"
+                href="https://www.google.com/maps/dir/?api=1&destination=15.086549782218476,-90.49420280050948"
+                target="_blank"
+                rel="noreferrer"
                 className="flex flex-1 items-center justify-center gap-2 rounded-full border border-brand-900/15 px-5 py-3 text-sm font-semibold text-brand-900 transition hover:bg-brand-900/5"
               >
                 <Navigation className="h-4 w-4" />
@@ -92,16 +94,16 @@ export default function Contact() {
             </div>
           </div>
 
-          <div className="relative overflow-hidden rounded-3xl border border-brand-900/5 bg-mint-100">
-            <div className="flex h-full min-h-[22rem] flex-col items-center justify-center gap-3 p-8 text-center">
-              <MapPin className="h-10 w-10 text-brand-900/40" strokeWidth={1.5} />
-              <p className="text-sm font-semibold text-brand-900/70">
-                Mapa de ubicación
-              </p>
-              <p className="max-w-xs text-xs text-brand-900/50">
-                Rabinal, Baja Verapaz · Fácil acceso peatonal y vehicular
-              </p>
-            </div>
+          <div className="relative min-h-[22rem] overflow-hidden rounded-3xl border border-brand-900/5">
+            <iframe
+              title="Ubicación del laboratorio"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d379.31216192162657!2d-90.49420280050948!3d15.086549782218476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x858a29b14f56ef43%3A0xe672b1fdba20c366!2sFARMACIA%20UTZILAJ%20ANIIM!5e1!3m2!1sen!2sgt!4v1790130421069!5m2!1sen!2sgt"
+              className="h-full min-h-[22rem] w-full"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="strict-origin-when-cross-origin"
+            />
           </div>
         </div>
       </div>
